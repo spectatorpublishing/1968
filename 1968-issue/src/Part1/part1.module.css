@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'BodoniMT';
+    src: url('../BodoniMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HeadlinerNo45';
+    src: url('../HeadlinerNo45.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+#glossary-click:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#glossary-close:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.glossary-wrap{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin-bottom: 2vw;
+    margin: 0 1vw;
+}
+
+.main-part a {
+    color: inherit;
+}
+
+.main-part a:hover {
+    color: inherit;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1em;
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#line {
+    margin-top: -15px;
+    margin-bottom: -30px;
+    width: 100%;
+}
+
+.banner {
+    margin-top: -5%;
+    width: 110%;
+    margin-left: -5%;
+    margin-bottom: auto;
+}
+
+.main-part {
+    margin-right: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-part img {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.body {
+    font-family: 'Bodoni MT', serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    width: 100%;
+}
+
+b{
+    font-size: 18px;
+}
+
+@media(min-width: 992px){
+    .content-wrap{
+      width: 50vw;
+      margin-left: 25vw;
+      margin-right: 25vw;
+      margin-top: 20vh;
+      margin-bottom: 5vh;
+      background-image: url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/HL3OUWWIOFAHDICHHPKXIF3H74.png"); /*paper texture*/
+      box-shadow: 0 0 1px 1px rgba(0,0,0,0.4) inset; /*to make the border less crisp and mimic paper*/
+    }
+
+    .content-wrap > .row {
+        margin: 0;
+        margin-top: 3vw;
+    }
+}
+
+@media(max-width: 991px){
+    .content-wrap .title {
+        margin-bottom: -4vw;
+        margin-top: -22vw;
+        font-size: 14vw;
+    }
+
+    .content-wrap .heading{
+        font-size: 16vw;
+    }
+
+    .content-wrap{
+      width: 95vw;
+      margin-left: 2.5vw;
+      margin-right: 2.5vw;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+      background-image: url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/HL3OUWWIOFAHDICHHPKXIF3H74.png"); /*paper texture*/
+      box-shadow: 0 0 1px 1px rgba(0,0,0,0.4) inset; /*to make the border less crisp and mimic paper*/
+    }
+
+    .content-wrap > .row {
+        margin: 0;
+        margin-top: 3vw;
+    }
+}
+
+.content-wrap > .row {
+    margin: 0;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#image-author {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#image-author {
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.person-info {
+    padding-right: 2vw;
+    padding-left: 4vw;
+    margin-top: 15px;
+    line-height: 1.8;
+    display: inline-block;
+    float: right;
+}
+
+.person-name {
+    text-transform: uppercase;
+    font-family: "Headliner No.45";
+    color: #ca4640;
+    font-size: 3vw;
+    line-height: 3;
+    margin-left: 30px;
+    margin-bottom: -2vw;
+}
+
+.person-bio{
+    color: #ca4640;
+    margin-top: -20px;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.heading{
+    margin-bottom: -5vw;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Headliner No.45";
+    color: black;
+    font-size: 9vw;
+}
+
+
+.title {
+    padding-top: 2vw;
+    margin-bottom: 0;
+    margin-top: -13vw;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Headliner No.45";
+    color: #ca4640;
+    font-size: 7vw;
+    transform: rotate(-6.25deg);
+}
+
+.title_part2link{
+    padding-top: 1vw;
+    margin-bottom: 0;
+    margin-top: -17vw;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Headliner No.45";
+    color: #ca4640;
+    font-size: 6vw;
+    transform: rotate(-6.25deg);
+}
