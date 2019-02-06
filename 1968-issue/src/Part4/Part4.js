@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './Part4.css';
 import oldStyles from './Part4.module.css';
 
