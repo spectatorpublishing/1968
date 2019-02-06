@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Part4.css';
+import './Part4.module.css';
 import oldStyles from './Part4.module.css';
 
 
