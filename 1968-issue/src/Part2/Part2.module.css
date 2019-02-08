@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'BodoniMT';
+  src: url('../BodoniMT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeadlinerNo45';
+  src: url('../HeadlinerNo45.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.Container{
+    display:flex;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    background-color: #2b2822;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.4) inset; /*to make the border less crisp and mimic paper*/
+}
+
+
+@media(max-width: 991px){
+    .Container{
+        width: 95vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        background-color: #2b2822;
+        box-shadow: 0 0 1px 1px rgba(0,0,0,0.4) inset; /*to make the border less crisp and mimic paper*/
+    }
+}
+
+.title {
+    width:100%;
+    text-transform: uppercase;
+    font-family: "HeadlinerNo45";
+    text-align: left;
+    font-size: 9vw;
+    color:#d84e4e;
+    padding-left: 15px;
+    padding-right: 15px;
+}
