@@ -1,7 +1,16 @@
+
 import React, {Component} from 'react'
 import classes from './Part2.module.css'
 
 class Part2 extends Component{
+
+    state = {
+        
+    }
+
+    onToggleInfo = () => {
+
+    }
 
 	render(){
         const profileDivStyle = {

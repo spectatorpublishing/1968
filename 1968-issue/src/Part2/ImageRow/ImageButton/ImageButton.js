@@ -6,7 +6,7 @@ const imageButton = (props) =>{
 	//expection props.src, props.name
 
 	return(
-		<div className={classes.imageBlock}>
+		<div className={classes.imageBlock} onClick={props.clicked}>
     		<div className = {classes.profileDivStyle}>
     			<img src={props.src}
     			className = {classes.profilePicStyle} />
