@@ -31,5 +31,3 @@ storiesOf('Part2', module) .add('p2', () => <Part2/>);
 storiesOf('Part3', module) .add('p3', () => <Part3/>);
 
 storiesOf('Part4', module) .add('p4', () => <Part4/>);
-
-storiesOf('ImageRow', module) .add('ImageRow', () => <ImageRow/>);

@@ -37,6 +37,59 @@
     }
 }
 
+ 
+.columns:
+{
+    flex: 2;
+    justify-content:center;    
+    flex-wrap: normal;
+    background-color: #2b2822;
+    color: white;
+        
+}
+
+.border {
+  background-image: url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/DROGZ7EZYBEZDHZ5Q3DBXR7GJI.png");
+  width: 48vw;
+  height: 1vw;
+  border-top: 1vw;
+  padding-bottom: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: -4vw;
+  margin-bottom: 2vw;
+}
+
+.introText{
+    font-family: "BodoniMT", serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 90%;
+    padding-bottom: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.infoText{
+    clear:both;
+    width:100%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    font-family: 'BodoniMT';
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    height: 40vw;
+    overflow: scroll;
+}
+
 .title {
     width:100%;
     text-transform: uppercase;
@@ -45,5 +98,16 @@
     font-size: 9vw;
     color:#d84e4e;
     padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.linkToPart3 {
+    text-transform: uppercase;
+    font-family: "HeadlinerNo45";
+    text-align: right;
+    font-size: 5vw;
+    color:#d84e4e;
+    padding-right: 25px;
+    margin-top: 10px;
 }
