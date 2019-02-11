@@ -88,6 +88,7 @@
     margin-bottom: 2vw;
     height: 40vw;
     overflow: scroll;
+    transition: all 3s ease-out;
 }
 
 .title {

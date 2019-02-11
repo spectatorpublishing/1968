@@ -15,20 +15,23 @@ class ImageRow extends Component{
 	}
 
 	render(){
+		let info = this.state.info
+		if (this.props.toggleDisabled)
+			info = null
 		return (
-			<div>
-			<div style = {rowStyle}>
-				{
-					this.props.data.map(info =>
-						<ImageButton 
-							key = {info.label}
-							src = {info.src} name = {info.name}
-							clicked = {() => this.onToggleInfo(info.label)}/>
-					)
-				}
-			</div>
+			<div onClick = {this.props.clicked}>
+				<div style = {rowStyle}>
+					{
+						this.props.data.map(info =>
+							<ImageButton 
+								key = {info.label}
+								src = {info.src} name = {info.name}
+								clicked = {() => this.onToggleInfo(info.label)}/>
+						)
+					}
+				</div>
 
-			{this.state.info}
+				{info}
 		    
 			</div>
 		)

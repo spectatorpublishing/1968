@@ -209,33 +209,48 @@ const INFO_TEXT2 = [
 
 const DATA = [INFO_TEXT1, INFO_TEXT2]
 
-const part2 = () =>{
-    const imageRows = DATA.map(item =>
-         <ImageRow data = {item}/>
-    )
+class Part2 extends Component{
+    state = {
+        selectecRowIndex: null
+    }
 
-    return(
-        <div className={classes.Container}>
-            <div className={classes.columns}>
-                <div className ={classes.title}>
-                        PART II: Profiles  
+    onClickRow = (index) =>{
+        this.setState({selectecRowIndex: index})
+    }
+
+    render(){
+        const imageRows = DATA.map((item, index) =>{
+            let toggleDisabled = true;
+            if (index == this.state.selectecRowIndex)
+                toggleDisabled = false
+            return <ImageRow key={index} data = {item}
+                clicked = {()=>this.onClickRow(index)}
+                toggleDisabled = {toggleDisabled}/>
+        })
+
+        return(
+            <div className={classes.Container}>
+                <div className={classes.columns}>
+                    <div className ={classes.title}>
+                            PART II: Profiles  
+                    </div>
+                    <div className={classes.border}></div>
+                    {/*<!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/900px-Flag_of_Uganda.svg.png" style="width:170px;height:190px;margin-left:2vw; margin-right: 0.7vw; padding-bottom:0px;">-->*/}
+                    <div className={classes.introText} >
+                        This past month, we set our staff on the mission of capturing the lived legacy of activism at Columbia in the fifty years since 1968. By talking to activists of differents moments and movements, we sought to answer a series of questions: Who is the “Columbia activist”? In what ways has 1968 served as a touchstone for activists past and present? How has the Columbia activist evolved since then? And what becomes of the Columbia activist after they leave campus? We invite you to dive into the stories and struggles of your time, and the times before you, and maybe even the times after you.  
+                    </div>  
+
+                    {imageRows}
+
+                    <div className= {classes.border} style={{marginTop: "2vw", marginBottom: "0"}}></div>
+                    <div className = {classes.linkToPart3}>
+                        PART III: COLUMBIA AND HARLEM
+                    </div>
+
                 </div>
-                <div className={classes.border}></div>
-                {/*<!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/900px-Flag_of_Uganda.svg.png" style="width:170px;height:190px;margin-left:2vw; margin-right: 0.7vw; padding-bottom:0px;">-->*/}
-                <div className={classes.introText} >
-                    This past month, we set our staff on the mission of capturing the lived legacy of activism at Columbia in the fifty years since 1968. By talking to activists of differents moments and movements, we sought to answer a series of questions: Who is the “Columbia activist”? In what ways has 1968 served as a touchstone for activists past and present? How has the Columbia activist evolved since then? And what becomes of the Columbia activist after they leave campus? We invite you to dive into the stories and struggles of your time, and the times before you, and maybe even the times after you.  
-                </div>  
-
-                {imageRows}
-
-                <div className= {classes.border} style={{marginTop: "2vw", marginBottom: "0"}}></div>
-                <div className = {classes.linkToPart3}>
-                    PART III: COLUMBIA AND HARLEM
-                </div>
-
             </div>
-        </div>
-    )
+        )
+        }
 }
 
-export default part2
+export default Part2
