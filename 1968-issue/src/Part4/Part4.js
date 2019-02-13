@@ -115,7 +115,7 @@ class Part4 extends Component {
             <div className="col-md-8 person-info">
                 <div className="person-bio">
                 <b>Woody Lewis</b>
-            <p>has a B.A. in music and an M.B.A. in finance from Columbia, and an M.F.A. in fiction from the Bennington Writing Seminars. He has worked as a rock musician, investment banker, security guard, jazz composer and software engineer - in that order. Born and raised in Brooklyn, he spent most of his adult life in northern and southern California, returning in 2010 to New York City. Woody is the author of Three Lost Souls: Stories about race, class and loneliness (Gotham Lane, 2016). He now lives in Connecticut, where he is at work on a memoir and a novel about Silicon Valley.</p>
+                has a B.A. in music and an M.B.A. in finance from Columbia, and an M.F.A. in fiction from the Bennington Writing Seminars. He has worked as a rock musician, investment banker, security guard, jazz composer and software engineer - in that order. Born and raised in Brooklyn, he spent most of his adult life in northern and southern California, returning in 2010 to New York City. Woody is the author of Three Lost Souls: Stories about race, class and loneliness (Gotham Lane, 2016). He now lives in Connecticut, where he is at work on a memoir and a novel about Silicon Valley.
                 </div>
             </div>
         </div>
