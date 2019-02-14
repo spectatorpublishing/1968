@@ -9,6 +9,7 @@ import { Button, Welcome } from '@storybook/react/demo';
 import Part1 from '../Part1/Part1.js';
 import Part3 from '../Part3/Part3.js';
 import Part4 from '../Part4/Part4.js';
+import Cover from '../Cover/Cover.js';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -27,3 +28,5 @@ storiesOf('Part1', module) .add('p1', () => <Part1/>);
 storiesOf('Part3', module) .add('p3', () => <Part3/>);
 
 storiesOf('Part4', module) .add('p4', () => <Part4/>);
+
+storiesOf('Cover', module) .add('Cr', () => <Cover/>);
