@@ -1,0 +1,33 @@
+
+.profileDivStyle {
+    border-style: solid; 
+    border-color: white; 
+    border-width: 2px; 
+    display: inline-block
+}
+
+.profilePicStyle {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.name {
+    font-family: serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    color: white
+}
+
+.imageBlock {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 33.33333333%;
+    box-sizing: border-box;
+}
+
+.imageBlock:hover {
+  transform: scale(1.15);
+}
